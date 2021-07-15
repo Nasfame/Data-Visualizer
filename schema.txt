@@ -1,0 +1,21 @@
+user
+id  username password
+int varchar(150) varchar(150)
+
+distributor
+id  name
+int varchar(150)
+
+product
+id  name
+int varchar(150)
+
+
+distribution
+product_id  distributor_id   place       quantity_sold year
+int          int            varchar(50)    int         int
+
+
+Relationship
+product ->  distribution 1->many
+distributor ->  distribution 1->many
