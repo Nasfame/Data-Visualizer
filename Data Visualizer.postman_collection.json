@@ -1,0 +1,660 @@
+{
+	"info": {
+		"_postman_id": "81fc6e69-55c9-4ac6-895a-4aaff14519b4",
+		"name": "Data Visualizer",
+		"description": "## Data Visualizer for Graphical Representation.\n\nSign In To Access the API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Welcome",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:34:07 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "\"Welcome to Data Visualizer,Kindly Sign In\""
+				}
+			]
+		},
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"hiro\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/signup",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "SignUp",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"hiro2\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:46:29 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "\"User created\""
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"hiro\",\r\n    \"password\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"hiro\",\r\n    \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "19"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "remember_token=1|f5517bfb067f604bec7248a38e0448eb330da1ec64e6c07861188407fb2894fb09abb2b0bc900101edf03c98b70c76a52a59ab9046ed613bdb4eafeb038d4bcf; Expires=Fri, 15 Jul 2022 11:46:04 GMT; Path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "session=.eJydjkuKwzAQRK8iem2Gli2pJZ8i-xBCS92KDc4Hy1mF3H0Ec4NZFUVVUe8D17pxW7TBfP6AObrAXVvjm8IAp025qdmeN7M-zPE0XEoPzbGszbx65wcu3-Gfu8vQz3dtC8zH_tbuVoEZauAxqWSVhIKE2VpbJockMThxTDnxlKzVSkGISVJUkZi8pej8WFNKFHLMNSJFLqNSwOxRisPJ1VBHDYWRnCDaELX4WC1R8ZJtzdHnjn99N93_aCx8fwE05Fj9.YPAf_A.iPLChLyYR5H_hrb1t5Cmu-xqmN4; HttpOnly; Path=/"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:46:04 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "\"Login Successful\""
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Area",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/place/Ernakulam",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"place",
+						"Ernakulam"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Area",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/place/Ernakulam",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"place",
+								"Ernakulam"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "261"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:33:18 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"distributor\": [\n        {\n            \"name\": \"Nas\",\n            \"product\": [\n                {\n                    \"name\": \"Rocket\",\n                    \"quantity\": 2\n                },\n                {\n                    \"name\": \"Rocket1\",\n                    \"quantity\": 3\n                }\n            ]\n        }\n    ],\n    \"name\": \"Ernakulam\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/product/Rocket",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"Rocket"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/product/Rocket",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"product",
+								"Rocket"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "183"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:32:47 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"distributor\": [\n        {\n            \"name\": \"Nas\",\n            \"place\": [\n                {\n                    \"name\": \"Ernakulam\",\n                    \"quantity\": 2\n                }\n            ]\n        }\n    ],\n    \"name\": \"Rocket\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Distributor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/distributor/Nas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"distributor",
+						"Nas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Distributor",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/distributor/Nas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"distributor",
+								"Nas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:24:48 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Camlin\",\n    \"place\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "TopN",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/topN/Nas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"topN",
+						"Nas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TopN",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/topN/Nas",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"topN",
+								"Nas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "179"
+						},
+						{
+							"key": "Vary",
+							"value": "Cookie"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:48:23 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Nas\",\n    \"place\": [\n        {\n            \"name\": \"Ernakulam\",\n            \"product\": [\n                {\n                    \"name\": \"Rocket\",\n                    \"quantity\": 2\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Distribution",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\": \"Rocket1\",\r\n    \"distributor\": \"Nas\",\r\n    \"quantity_sold\": 3,\r\n    \"year\": 2021\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/distribution/Ernakulam",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"distribution",
+						"Ernakulam"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Distribution",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": \"Rocke8t\",\r\n    \"distributor\": \"Nas\",\r\n    \"quantity_sold\": 199999990,\r\n    \"year\": 2021\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/distribution/Ernakulam",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"distribution",
+								"Ernakulam"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "29"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.9.5"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 15 Jul 2021 11:22:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "\"Data Register Successfully\""
+				}
+			]
+		}
+	]
+}
