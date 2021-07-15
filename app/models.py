@@ -40,9 +40,9 @@ class Distribution(db.Model):
 
     # products = db.relationship('Product', backref=db.backref('distributors', lazy='dynamic'), lazy='joined')
     distributor = db.relationship('Distributor', lazy='joined')
-    product = db.relationship('Product',lazy='joined')
-    #
+    product = db.relationship('Product', lazy='joined')
 
+    #
 
     def __init__(self, p_id, d_id, place, q_sold, year):
         self.product_id = p_id

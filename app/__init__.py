@@ -12,7 +12,7 @@ def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = "Hiro"  # Cookies encrypted
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-    app.config['SQLALCHEMY_ECHO'] = True  # Debug
+    app.config['SQLALCHEMY_ECHO'] = False  # Debug
 
     db.init_app(app)
 
@@ -21,14 +21,7 @@ def create_app():
     with app.app_context():
         from .views import views
         from .auth import auth
-        # db.drop_all()
         db.create_all()
-        # dis1 = Distributor("DSS")
-        # p1 = Product("FPS")
-        # d1 = Distribution(2,2,"Ernakulam",1010,2021)
-        # db.session.add_all([dis1, p1, d1])
-        # db.session.commit()
-
         app.register_blueprint(views, url_prefix='/')
         app.register_blueprint(auth, url_prefix='/')
 
